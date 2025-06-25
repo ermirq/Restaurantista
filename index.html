@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurantista - Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inspiration&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome (if you're using icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+    <header class="bg-primary text-white">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">Restaurantista</a>
+            </div>
+            <ul class="navbar-menu">
+                <li>
+                    <a href="index.html" class="text-white active">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="text-white">Menu <i class="fa-solid fa-cart-shopping"></i><span id="cart-badge" class="badge">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-content-title">Order Your<br /><span>favorite Foods</span></h1>
+
+            <p class="hero-content-slogan text-gray">
+                Fresh and tasty seafood curry, Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                proin sit
+            </p>
+
+            <div class="order-info">
+                <h3 class="order-info-total">
+                    Total Order: <span class="price">$0</span>
+                </h3>
+
+                <div class="order-info-buttons">
+                    <div class="quantity-selector">
+                        <button id="decrement">-</button>
+                        <span>1</span>
+                        <button id="increment">+</button>
+                    </div>
+                    <button class="add-to-cart">
+                        <span class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Food Carousel -->
+            <div class="food-carousel">
+                <button class="carousel-arrow left-arrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="food-items">
+                    <div class="food-item selected">
+                        <img src="img/pizza.webp" width="100px" alt="Pizza" />
+                        <p>
+                            Margarita<br />
+                            <span class="food-price">
+                                <span class="valute">$</span>3.15
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="food-item">
+                        <img src="img/pizza.webp" width="100px" alt="Pizza" />
+                        <p>
+                            Margarita<br />
+                            <span class="food-price">
+                                <span class="valute">$</span>4.50
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="food-item">
+                        <img src="img/pizza.webp" width="100px" alt="Pizza" />
+                        <p>
+                            Margarita<br />
+                            <span class="food-price">
+                                <span class="valute">$</span>13.60
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <button class="carousel-arrow right-arrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <img class="hero-main-image" src="img/pizza.webp" width="100px" alt="Main dish" />
+
+            <div class="food-details">
+                <div class="food-title">
+                    <p>Margarita</p>
+                    <p><i class="fa-solid fa-star"></i>5.0</p>
+                </div>
+                <p class="prepare-time">
+                    <i class="fa-regular fa-clock"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

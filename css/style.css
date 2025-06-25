@@ -1,0 +1,231 @@
+@import url("variables.css");
+@import url("common.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+     font-family: var(--poppins-font);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo a {
+    font-size: 60px;
+    color: white;
+    font-family: var(--inspiration-font);
+}
+
+.navbar-menu{
+    list-style:none;
+    display: flex;
+    gap: 30px;
+    transition: 0.5s all ease;
+}
+
+.navbar-menu li a {
+    font-size: 24px;
+    position: relative;
+}
+
+.navbar-menu li a.active,
+.navbar-menu li a:hover {
+    text-decoration: underline;
+}
+
+.navbar-menu li a span.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff0000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 100px;
+}
+
+.hero-bg {
+    position: absolute;
+    right: -50%;
+    transform: translateX(-50%);
+    height: calc(100vh - 100px);
+    width: calc(100vw - 100%);
+    border-radius: 50%;
+    z-index: -5;
+}
+
+.hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.hero .hero-content title {
+    font-size: var(--title);
+    line-height: 1;
+}
+
+.hero .hero-content-title span {
+    font-weight: 400;
+}
+
+.hero .order-info-total {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.hero .order-info-total .price {
+    font-weight: 600;
+}
+
+.order-info-buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.order-info-buttons .quantity-selector {
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    width: 180px;
+    height: 66px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-info-buttons .quantity-selector button {
+    background-color: transparent;
+    border: none;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.order-info-buttons .quantity-selector span {
+    border-right: 1px solid var(--gray-color);
+    border-left: 1px solid var(--gray-color);
+    width: 50%;
+    text-align: center;
+}
+
+.order-info-buttons .add-to-cart {
+    background-color: #000;
+    color: #fff;
+    width: 261px;
+    height: 64px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100px;
+    font-size: 24px;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.order-info-buttons .add-to-cart .cart-icon {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-carousel {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.food-carousel button {
+    background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    width: 46px;
+    height: 46px;
+    font-size: 24px;
+    cursor: pointer;  
+}
+
+.food-carousel .food-items {
+    display: flex;
+    gap: 23px;
+    width: calc(3* 110px);
+    overflow-x: hidden;
+}
+
+.food-carousel .food-item {
+    width: 93px;
+    height: 164px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.food-carousel .food-item.selected {
+    border: 2px solid var(--primary-color);
+}
+
+.food-carousel .food-item:nth-child(even){
+    background-color: #ddfcbf;
+}
+
+.food-carousel .food-item:nth-child(odd){
+    background-color: #ffe0f0;
+}
+
+.food-carousel .food-item img {
+    width: 97%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.food-carousel .food-item .food-price {
+    font-weight: 600;
+}
+
+.food-carousel .food-item .food-price .valute {
+    font-weight: 400;
+    color: var(--primary-color);
+}
