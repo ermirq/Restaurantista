@@ -12,9 +12,17 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/hero.js" defer></script>
+    <script src="js/subscribe.js" defer></script>
+    <script src="js/statisticsIncrease.js" defer></script>
+    <script src="js/contactForm.js" defer></script>
+    <script src="js/testimonials.js" defer></script>
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     <!-- Font Awesome (if you're using icons) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
     <header class="bg-primary text-white">
         <nav class="navbar">
@@ -49,7 +57,7 @@
                 <div class="order-info-buttons">
                     <div class="quantity-selector">
                         <button id="decrement">-</button>
-                        <span>1</span>
+                        <span class="quantity">1</span>
                         <button id="increment">+</button>
                     </div>
                     <button class="add-to-cart">
@@ -68,35 +76,7 @@
                 </button>
 
                 <div class="food-items">
-                    <div class="food-item selected">
-                        <img src="img/pizza.webp" alt="Pizza" />
-                        <p>
-                            Margarita<br />
-                            <span class="food-price">
-                                <span class="valute">$</span>3.15
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="food-item">
-                        <img src="img/pizza.webp" alt="Pizza" />
-                        <p>
-                            Margarita<br />
-                            <span class="food-price">
-                                <span class="valute">$</span>4.50
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="food-item">
-                        <img src="img/pizza.webp" alt="Pizza" />
-                        <p>
-                            Margarita<br />
-                            <span class="food-price">
-                                <span class="valute">$</span>13.60
-                            </span>
-                        </p>
-                    </div>
+                    
                 </div>
 
                 <button class="carousel-arrow right-arrow">
@@ -107,7 +87,7 @@
 
         <!-- Hero Image -->
         <div class="hero-image">
-            <img class="hero-main-image" src="img/pizza.webp" width="100px" alt="Main dish" />
+            <img class="hero-main-image" />
 
             <div class="food-details">
                 <div class="food-title">
@@ -160,15 +140,15 @@
                 <p class="stat-description">Happy costumer</p>
             </div>
             <div class="stat-item">
-                <span class="stat-value" data-target="2000">900+</span>
+                <span class="stat-value" data-target="12000">900+</span>
                 <p class="stat-description">Delicious Dishes</p>
             </div>
             <div class="stat-item">
-                <span class="stat-value" data-target="2000">900+</span>
+                <span class="stat-value" data-target="500">900+</span>
                 <p class="stat-description">Orders</p>
             </div>
             <div class="stat-item">
-                <span class="stat-value" data-target="2000">900+</span>
+                <span class="stat-value" data-target="1000">900+</span>
                 <p class="stat-description">Daily website visitors</p>
             </div>
         </div>
@@ -196,7 +176,7 @@
             </label> 
 
             <div class="subscribe-form-inline">
-                <input type="email" id="subscriberEmail" placeholder="Your Email ..." class="subscribe-input" required/>
+                <input type="text" id="subscriberEmail" placeholder="Your Email ..." class="subscribe-input" required/>
                 <button type="submit" class="subscribe-button">Subscribe</button>
             </div>
         </form>
@@ -244,10 +224,10 @@
             </div>
 
             <form class="email-form">
-                <input type="text" name="name" placeholder="Name..." required/>
-                <input type="text" name="email" placeholder="Email..." required/>
-                <input type="text" name="subject" placeholder="Subject..." required/>
-                <textarea name="message" placeholder="Message..." rows="5" required></textarea>
+                <input type="text" id="name" name="name" placeholder="Name..." required/>
+                <input type="text" id="email" name="email" placeholder="Email..." required/>
+                <input type="text" id="subject" name="subject" placeholder="Subject..." required/>
+                <textarea id="message" name="message" placeholder="Message..." rows="5" required></textarea>
                 <button type="submit">Send Message</button> 
             </form>
         </div>
@@ -257,10 +237,6 @@
         <h2 class="primary-title text-primary">What Our Clients Say About Us</h2>
 
         <div class="carousel-indicators">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
         </div>
         
         <div class="testimonial-carousel">
@@ -271,43 +247,40 @@
             <div class="testimonial-container">
                 <div class="testimonial-card-first">
                     <div class="testimonial-image">
-                        <img src="img/arbrim-thaci.webp" alt="Arbrim Thaci" width="200px">
+                        <img src="" alt="" width="200px">
                     </div>
-                    <h3 class="testimonial-name">Arbrim Thaci</h3>
-                    <p class="testimonial-role">CEO</p>
+                    <h3 class="testimonial-name"></h3>
+                    <p class="testimonial-role"></p>
                     <p class="testimonial-quote">
                         <i class="fa-solid fa-quote-left"></i>
                     </p>
                     <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aperiam? Sequi nobis harum laudantium aperiam dolores provident minima nihil veritatis.
                     </p>
                 </div>
 
                 <div class="testimonial-card-middle">
                     <div class="testimonial-image">
-                        <img src="img/enes-shala.png" alt="Enes Shala" width="200px">
+                        <img src="" alt="" width="200px">
                     </div>
-                    <h3 class="testimonial-name">Enes Shala</h3>
-                    <p class="testimonial-role">Lead Front-end</p>
+                    <h3 class="testimonial-name"></h3>
+                    <p class="testimonial-role"></p>
                     <p class="testimonial-quote">
                         <i class="fa-solid fa-quote-left"></i>
                     </p>
                     <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aperiam? Sequi nobis harum laudantium aperiam dolores provident minima nihil veritatis.
                     </p>
                 </div>
 
                 <div class="testimonial-card-third">
                     <div class="testimonial-image">
-                        <img src="img/violeta-thaci.webp" alt="Violeta Thaci" width="200px">
+                        <img src="" alt="" width="200px">
                     </div>
-                    <h3 class="testimonial-name">Violeta Thaci</h3>
-                    <p class="testimonial-role">Lead Sales</p>
+                    <h3 class="testimonial-name"></h3>
+                    <p class="testimonial-role"></p>
                     <p class="testimonial-quote">
                         <i class="fa-solid fa-quote-left"></i>
                     </p>
                     <p class="testimonial-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, aperiam? Sequi nobis harum laudantium aperiam dolores provident minima nihil veritatis.
                     </p>
                 </div>
             </div>

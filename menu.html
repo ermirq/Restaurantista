@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantista - Menu</title>
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Inspiration&family=Irish+Grover&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script src="js/menu.js" defer></script>
+    <script src="js/payment.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-primary text-white">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a href="index.html">Restaurantista</a>
+            </div>
+            <ul class="navbar-menu">
+                <li>
+                    <a href="index.html" class="text-white">Home</a>
+                </li>
+                <li>
+                    <a href="menu.html" class="text-white active">Menu <i class="fa-solid fa-cart-shopping"></i><span id="cart-badge" class="badge">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menu-layout">
+        <div class="menu">
+            <div class="menu-categories">
+                <div class="menu-category active">
+                    <img width="200px" src="img/pasta.svg" alt="Breakfast">
+                    <div class="menu-category-info">
+                        <h3 class="menu-category-title">Breakfast</h3>
+                        <p class="text-gray">22 items in stock</p>
+                    </div>
+                </div>
+
+                 <div class="menu-category">
+                    <img width="200px" src="img/pasta.svg" alt="Lunch">
+                    <div class="menu-category-info">
+                        <h3 class="menu-category-title">Lunch</h3>
+                        <p class="text-gray">22 items in stock</p>
+                    </div>
+                </div>
+
+                 <div class="menu-category">
+                    <img width="200px" src="img/pasta.svg" alt="Dessert">
+                    <div class="menu-category-info">
+                        <h3 class="menu-category-title">Dessert</h3>
+                        <p class="text-gray">22 items in stock</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="primary-title">Breakfast Menu</h1>
+
+            <div class="menu-items">
+            </div>
+        </div>
+
+        <div class="invoice">
+            <div class="invoice-items">
+            </div>
+
+            <div class="payment-summary">
+            </div>
+        </div>
+    </div>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <h3>Payment</h3>
+            <hr />
+            <form id="payment-form" class="payment-form">
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="form-group">
+                    <label for="expiration-date">Expiration Date</label>
+                    <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY">
+                </div>
+                 <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123">
+                </div>
+                <button type="submit" class="pay-button">Pay</button>
+            </form>
+            <p class="payment-note">
+                Your personal data will be used to process your order,
+                support your experience throughtout this website, and for
+                other purposes described in our privvacy policy.
+            </p>
+        </div>
+    </div>
+
+    <div class="success-modal" id="success-modal">
+        <div class="modal-content">
+            <h3>Order has been paid successfully</h3>
+            <div class="checkmark">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Arbrim Thaci",
+        "role": "CEO",
+        "image": "img/arbrim-thaci.webp",
+        "text": "The food here is absolutely amazing! The flavors are rich and authentic, and the ingredients are fresh and high-quality. I highly recommend trying their signature dishes."
+    },
+    {
+        "name": "Enes Shala",
+        "role": "Frontend Developer",
+        "image": "img/enes-shala.png",
+        "text": "The ambient is fantstic, perfect for a romantic dinner or a night out with friends. The staff is attentive and friendly, making sure every guest feels welcome and comfortable."
+    },
+    {
+        "name": "Violeta Murati Thaci",
+        "role": "Lead Marketing",
+        "image": "img/violeta-thaci.webp",
+        "text": "The menu offers a wide variety of options, from traditional dishes to modern fusion cuisine. There is something for everyone, including vegetarian and gluten-free options."
+    },
+    {
+        "name": "Filan Fisniku",
+        "role": "Lead Designer",
+        "image": "img/user.png",
+        "text": "The presentation of the food is beautiful, with each dish carefully plated and garnished. The attention to detail is evident in every aspect of the dining experience."
+    }
+]
